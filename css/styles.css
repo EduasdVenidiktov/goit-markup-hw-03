@@ -1,29 +1,65 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family:"Roboto",
     sans-serif;
     color: #434455;
     background-color: #FFF;
 }
+h1, h2, h3, h4, h5, h6, p {
+margin-top: 0;
+margin-bottom: 0;
+}
 
-.header {
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+button{
+    cursor: pointer;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
     background: #FFF;
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 156px;
+    padding-right: 156px;
+    outline: 2px solid red;
+}
+.header-container{
+    display: flex;
+    align-items: center;
 }
 .header-nav {
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
 .header-logo {
     font-family: "Raleway", sans-serif;
-    color: #4d5ae5;
-    line-height: 1.17; 
+        line-height: 1.17; 
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;}
 
 .logo-blue{
     color: #4D5AE5;
@@ -32,7 +68,15 @@ a{
 .logo-black {
     color: #2E2F42;
 }
+
+.header-nav{
+    display: flex;
+    align-items: center;
+
+}
 .header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-item{
@@ -52,15 +96,21 @@ letter-spacing: 0.02em;
     font-weight: 500
     }
 
-    .header-menu-link:hover,
-    .header-menu-link:focus {
-        color: #404bbf;
-        }
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: #404bbf;
+}
 
 .address {
-    font-style: normal
+    font-style: normal;
+    justify-content: flex-end;
+    margin-left: auto;
 }
+
 .address-list {
+    gap: 40px;
+    display: flex;
+    align-items: center;
 }
 .address-item {
 font-size: 16px;
@@ -73,13 +123,21 @@ font-style: normal;
 .address-link{
     color: #434455;
 }
-.address-link:hover, .address-link:focus  {
+.address-link:hover, .address-link:focus {
     color: #404BBF;
 }
 
+
 .solutions {
-    background: #2E2F42;
 }
+
+.solutions-container{
+    background: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    display: block;
+}
+
 .solutions-title {
     color: #FFF;
 text-align: center;
@@ -87,7 +145,10 @@ font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
+max-width: 496px;
+    margin: 0 auto 48px auto;
 }
+
 .solutions-btn {
     color: #FFF;
 font-family: inherit;
@@ -97,19 +158,24 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
-
+padding: 16px 32px;
 background: #4D5AE5;
+display: block;
+margin: auto;
 }
 
-.solutions-btn:hover, .solutions-btn:focus 
-{
+.solutions-btn:hover, .solutions-btn:focus {
     background: #404BBF;
 }
-
 
 .features {
     background: #FFF;
 }
+
+.features-container{
+    padding: 120px 156px;
+}
+
 .features-title {
     color: #2E2F42;
 font-size: 20px;
@@ -118,26 +184,41 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 }
 .features-list {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
 }
+
 .features-item {
+    width: calc((100% - 24px * 3) / 4);
 }
+
 .features-subtitle {
     color: #2E2F42;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
+
 .features-item-text {
     color: #434455;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-.team {
-    background: #F4F4FD;
+
+.team{
 }
-.team-title {
+
+.team-container{
+    background: #F4F4FD;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
+.team-title{
     color: #2E2F42;
 text-align: center;
 font-size: 36px;
@@ -145,56 +226,90 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+padding-top: 120px;
+padding-bottom: 120px;
+
 }
 .team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    margin: 0 auto; 
 }
 .team-item {
 background: #FFF;
+padding: 32px 16px;
+display: block;
 }
+
 .team-item-image {
     background: lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
+    border-radius: 0px 0px 4px 4px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .team-item-title {
     color: #2E2F42;
-text-align: center;
+    text-align: center;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 .team-item-text {
     color: #434455;
-text-align: center;
+    text-align: center;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-.team-item {
+
+.portfolio{
 }
-.portfolio {
+
+.portfolio-container{
+    background: #FFF;
+    padding: 0 156px 120px 156px;
+}
+
+.portfolio-title {
     color: #2E2F42;
-text-align: center;
+    text-align: center;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-    background: #FFF;
+    margin-bottom: 72px;
+    padding-top: 120px;
 }
-.portfolio-list {    
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 }
 .portfolio-list-item {
     border: 1px solid #E7E9FC;
 background: #FFF;
+width: calc((100% - 24px * 2) / 3);
 }
 .portfolio-item-image {
-}
+    background: #FFF;
+    margin-bottom: 32px;
+    }
 .portfolio-item-title {
     color: #2E2F42;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 .portfolio-item-text {
     color: #434455;
@@ -202,10 +317,18 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding-bottom: 32px;
 }
+
 .footer {
-    background: #2E2F42;
     font-family: "Raleway", sans-serif;
+}
+
+.footer-container{
+    background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
 }
 
 .footer-logo {
@@ -216,14 +339,16 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
-.footer-logo-wight {
+.footer-logo-white {
     color: #F4F4FD;
 }
-
 
 .footer-text {
     color:  #F4F4FD;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+max-width: 264px;
+padding-top: 16px;
 }
+
