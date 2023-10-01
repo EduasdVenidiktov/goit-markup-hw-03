@@ -7,6 +7,7 @@ body{
     color: #434455;
     background-color: #FFF;
 }
+
 h1, h2, h3, h4, h5, h6, p {
 margin-top: 0;
 margin-bottom: 0;
@@ -28,7 +29,7 @@ button{
     cursor: pointer;
 }
 
-img{
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -36,17 +37,18 @@ img{
 
 .container {
     background: #FFF;
-    width: 1158px;
     margin: 0 auto;
-    padding-left: 156px;
-    padding-right: 156px;
-    outline: 2px solid red;
+    padding: 0 15px 0 15px,
 }
 .header-container{
     display: flex;
+    width: 1158px;
     align-items: center;
+    border-bottom: 1px solid #e7e9fc 
 }
 .header-nav {
+    display: flex;
+    align-items: center;
     gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -54,11 +56,13 @@ img{
 
 .header-logo {
     font-family: "Raleway", sans-serif;
-        line-height: 1.17; 
+    line-height: 1.17; 
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    padding: 24px 0 24px;
 }
 
 .logo-blue{
@@ -69,14 +73,10 @@ img{
     color: #2E2F42;
 }
 
-.header-nav{
-    display: flex;
-    align-items: center;
-
-}
 .header-menu-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-menu-item{
@@ -128,14 +128,13 @@ font-style: normal;
 }
 
 
-.solutions {
+.first-solutions {
 }
 
 .solutions-container{
     background: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
     display: block;
+    padding: 188px 0;
 }
 
 .solutions-title {
@@ -162,18 +161,22 @@ padding: 16px 32px;
 background: #4D5AE5;
 display: block;
 margin: auto;
+min-width: 169px;
+height: 56px;
+border: none; 
+border-radius: 4px;
 }
 
 .solutions-btn:hover, .solutions-btn:focus {
     background: #404BBF;
 }
 
-.features {
+.second-features {
     background: #FFF;
 }
 
 .features-container{
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 .features-title {
@@ -209,13 +212,12 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
-.team{
+.third-team {
 }
 
 .team-container{
     background: #F4F4FD;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 120px 0;
 }
 
 .team-title{
@@ -228,19 +230,25 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 padding-top: 120px;
 padding-bottom: 120px;
-
+margin-bottom: 72px; 
 }
 .team-list {
     display: flex;
     gap: 24px;
     justify-content: space-between;
-    padding-bottom: 120px;
     margin: 0 auto; 
+
 }
 .team-item {
 background: #FFF;
-padding: 32px 16px;
 display: block;
+border-radius: 0px 0px 4px 4px; 
+padding-bottom: 32px;
+
+}
+
+.info-team-item{
+
 }
 
 .team-item-image {
@@ -250,6 +258,7 @@ display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
 
 }
 .team-item-title {
@@ -261,6 +270,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 }
+
 .team-item-text {
     color: #434455;
     text-align: center;
@@ -269,7 +279,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
-.portfolio{
+
+.fourth-portfolio {
+    padding-top: 120px; 
 }
 
 .portfolio-container{
@@ -299,10 +311,18 @@ text-transform: capitalize;
 background: #FFF;
 width: calc((100% - 24px * 2) / 3);
 }
+
+.info-portfolio-item{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none; 
+}
+
 .portfolio-item-image {
     background: #FFF;
     margin-bottom: 32px;
     }
+    
 .portfolio-item-title {
     color: #2E2F42;
 font-size: 20px;
@@ -311,6 +331,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 }
+
 .portfolio-item-text {
     color: #434455;
 font-size: 16px;
@@ -326,9 +347,8 @@ padding-bottom: 32px;
 
 .footer-container{
     background: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
     display: block;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -338,6 +358,8 @@ font-weight: 700;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+display: inline-block;
+margin-bottom: 16px; 
 }
 .footer-logo-white {
     color: #F4F4FD;
@@ -349,6 +371,5 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 max-width: 264px;
-padding-top: 16px;
 }
 
