@@ -129,19 +129,15 @@ font-style: normal;
     color: #404BBF;
 }
 
+.first-solutions {
+    padding: 188px 0;
+}
 
 .solutions-container{
     margin: 0;
     background: #2E2F42;
     display: block;
-    padding: 188px 0;
 }
-
-
-.first-solutions {
-    
-}
-
 
 .solutions-title {
     color: #FFF;
@@ -178,23 +174,22 @@ border-radius: 4px;
 }
 
 
-
 .second-features {
     background: #FFF;
     padding: 120px 0;
 }
 
 .visually-hidden {
-    color: #2E2F42;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-}
-.features-list {
-    display: flex;
-    gap: 24px;
-    margin: 0 auto;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-item {
@@ -218,13 +213,13 @@ letter-spacing: 0.02em;
 }
 
 
+
 .third-team {
-    
+    padding: 120px 0;
 }
 
 .team-container{
     background: #F4F4FD;
-    padding: 120px 0;
 }
 
 .team-title{
@@ -279,11 +274,11 @@ letter-spacing: 0.02em;
 
 
 .fourth-portfolio {
+    padding: 120px 0 120px 0;
 }
 
 .portfolio-container{
     background: #FFF;
-    padding: 120px 0 120px 0;
 }
 
 .portfolio-title {
@@ -337,12 +332,12 @@ letter-spacing: 0.02em;
 
 .footer {
     font-family: "Raleway", sans-serif;
+    padding: 100px 0;
 }
 
 .footer-container {
     background: #2E2F42;
     display: block;
-    padding: 100px 0;
 }
 
 .footer-logo {
