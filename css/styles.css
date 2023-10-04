@@ -221,8 +221,8 @@ letter-spacing: 0.02em;
 
 
 .third-team {
-    padding: 120px 0;
     background-color: #F4F4FD;
+    padding: 120px 0 120px 0;
 }
 
 .team-container{
